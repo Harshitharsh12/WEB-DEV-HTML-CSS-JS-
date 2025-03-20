@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsyncProject</title>
+</head>
+<body>
+    <h1>hello harshit</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+        let a=document.querySelector("#start")
+        let b=document.querySelector("#stop")
+        a.addEventListener('click',()=>{
+         Interval=setInterval(()=>{
+        console.log("My name is Harshit!!")
+            },2000)
+       
+          
+        })
+        b.addEventListener('click',()=>{
+clearInterval(Interval) })
+       
+    </script>
+</body>
+</html>

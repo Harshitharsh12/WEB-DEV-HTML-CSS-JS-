@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS em and rem sizingunits</title>
+    <style>
+        /*.a{
+            color:white;
+            background-color: black;
+        }
+        .a p{
+color: red;
+background-color: yellow;
+/* here font-size is 16px which is default.
+}
+    .a p{
+color: red;
+background-color: yellow;
+font-size: 2em; /* here 2em means 2 time(mu
+ltiple) size of existing size here existing
+size is default(16px) and if we give font
+value to any selector than it is inherit
+this value and it's font size is also that.
+for example: If we give above .a class selector
+ font-size:10px ,than it inherit that value
+ from it and 2em means it is 2 time of 10px
+ means now its font-size is 20px. 
+}*/
+        .a {
+            color: white;
+ background-color: black;
+            font-size: 10px;
+        }
+
+        /* .a p {
+            color: red;
+            background-color: yellow;
+          /*here it's font-size is 10px which
+           is inherit from  above .a selector  
+        }*/
+        .a p {
+            color: red;
+            background-color: yellow;
+            font-size: 2em;
+            /*here it's font-size
+            is 10*2=20px.  */
+        }
+
+        /*html {
+            font-size: 15px;
+            /*it is root element
+        font-size 
+        }
+
+        .h {
+            font-size: 2rem;
+            /* here its size is 2 time of the
+            root elemnt size so size is 30px
+            the default size of root element
+            is also 16px.
+        }*/
+
+                .h{
+            font-size: 2rem;
+            /* here its size is 2 time of the
+            root elemnt size so size is 32px
+             because the default size of root 
+            element is also 16px.*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Natus, at.
+    </div>
+    <div class="a">
+        <p>
+            hello
+        </p>
+    </div>
+    <p class="h">hello what's app</p>
+</body>
+
+</html>

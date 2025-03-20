@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        display: flex;
+        height: 500px;
+        /* for row order items: specify 
+             the content horizontally(main axis) 
+             center */
+        /* for column order items: specify 
+             the content vertically(main axis)
+              center */
+        justify-content: center;
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: baseline; */
+        /* justify-content: end; */
+        /* justify-content: first baseline; */
+        /* justify-content: last baseline; */
+        /* justify-content: left; */
+        /* justify-content: right; */
+        /* justify-content: safe; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* for row order items: specify
+             the content/items vertically (cross-axis)
+             center */
+        /*for column order items: specify
+             the content/items horizontally (cross-axis)
+             center */
+        align-items: center;
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: baseline; */
+        /* align-items: end; */
+        /* align-items: first baseline; */
+        /* align-items: last baseline; */
+        /* align-items: normal; */
+        /* align-items: self-end; */
+        /* align-items: self-start; */
+        /* align-items: start; */
+        /* align-items: stretch; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row;  */
+        flex-direction: row-reverse;
+        /*  align-items used when we have only 
+             one line for center with respect to
+             cross-axis and align-content is used 
+             instead of align-items
+            when we have more than one lines
+             for center with respect to cross-axis*/
+        /* align-content: center; */
+      }
+
+      /* note: for the row type items the main axis 
+        is horizontal axis and cross axis is verti
+        cal axis */
+
+      /* note: for the column type items the main axis 
+        is vertical axis and cross axis is horizontal
+         axis */
+
+      .item {
+        height: 52px;
+        width: 62px;
+        background-color: blueviolet;
+        border: 2px solid black;
+        /* margin: 4px; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+      </div>
+    </main>
+  </body>
+</html>

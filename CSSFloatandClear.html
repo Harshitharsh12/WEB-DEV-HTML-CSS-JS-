@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear </title>
+    <style>
+        img {
+            /* float: left;  */
+            /* note:float left allow the image to shift
+        onto the left side and allow any one content
+        to come it's end.
+*/
+float: right;
+        }
+
+        .cards {
+            border: 2px solid red;
+            display: flow-root;
+            /* note:itis use to prevent overflow */
+        }
+
+        .card {
+            border: 2px solid black;
+        }
+
+        .card3 {
+            /* note: it allows no any content to 
+            its both side */
+            /* clear: right;
+            clear: left; 
+            or */
+            clear: both;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="WebImages/boat.jpg" alt="boat and man image">
+        <div class="card">card 1</div>
+        <div class="card ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis, architecto
+            veniam quos laudantium, repudiandae atque voluptas, nostrum voluptate impedit eligendi! Ipsum possimus earum
+            provident repellat facilis quisquam esse neque?</div>
+        <div class="card card3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quibusdam optio porro dolore
+            odit reprehenderit, saepe placeat ex sint officiis quam exercitationem harum, repellat est minus similique!
+            Et a exercitationem vel voluptates omnis perferendis voluptas, sit, iure illum quod, veritatis quae. Nam
+            molestias, vero consequatur rerum deleniti eum dicta praesentium consequuntur vel quaerat quae sint
+            perferendis eius autem tempore eaque minima omnis temporibus nobis libero alias expedita velit saepe illum.
+            Itaque, adipisci repudiandae placeat dolorem quam ad nulla provident soluta eligendi omnis quidem excepturi,
+            hic natus magni nisi quisquam exercitationem sequi perferendis vitae rerum doloribus assumenda. Blanditiis
+            in possimus illum. Cum provident, laudantium harum quod quo quae repellat explicabo voluptatum odit tempore
+            placeat architecto suscipit necessitatibus maxime animi similique beatae laborum! Nesciunt iure aperiam,
+            rerum quos quam accusamus dicta molestiae beatae inventore, illum ea? Voluptas, consequatur quibusdam ullam
+            officia consequuntur eveniet iure at reprehenderit fugiat inventore provident repellendus numquam doloribus
+            sint maiores culpa minus quis possimus sapiente? Optio impedit aperiam laudantium debitis a culpa pariatur
+            cupiditate ut nemo? Facilis, nobis doloremque reiciendis facere beatae ipsam minus iusto odio eum ex?
+            Possimus cupiditate officia omnis totam? Eveniet temporibus architecto, nam voluptatum rerum vitae,
+            voluptates dolore nulla corrupti incidunt pariatur molestiae molestias aliquid dolorem consectetur
+            distinctio qui culpa dignissimos cupiditate aspernatur placeat quod? Doloremque neque perferendis laudantium
+            odit illo sunt voluptatum tempore molestias nihil sed inventore architecto, corporis nobis recusandae
+            debitis ducimus autem delectus consequatur quis id tenetur eius eaque voluptatibus! Magni, reprehenderit
+            earum similique illum tempora non nisi saepe esse, repellat ab vel delectus mollitia exercitationem labore
+            cum dicta provident. Veniam, illo quas, expedita autem facilis, iste iure harum aut natus nisi libero! A
+            esse sapiente omnis dolorem, perspiciatis voluptatum eum officiis nostrum consequuntur quas iure nihil
+            architecto. Magni nemo quia, enim atque libero excepturi cum, molestiae maiores consequuntur aut quos!</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectorsInCSS</title>
+    <style>
+        /* it is a element selector*/
+        div {
+            color: blue;
+            background-color: yellow;
+
+        }
+
+        /* It is an Id selector. */
+        #div2 {
+            color: red;
+            background-color: olive;
+        }
+
+        /* It is a class selector. */
+        .sp {
+            color: blue;
+            background-color: antiquewhite;
+        }
+
+        /* child selector: working only if p is the child of
+         the div and not working on the grandchild. */
+        div>p {
+            color: blue;
+            background-color: red;
+        }
+
+        /* Decendant Selector: working if p is the
+         child or grandchild(child's child) of the div*/
+        div p {
+            color: brown;
+        }
+
+        /* Universal Selector: */
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        /* attribute Selector:*/
+    [data-x=a]{
+        color:black;
+        background-color:aqua;
+    }
+
+        /* Psudo Selector: */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1" class="d">
+        Hello what's your name?
+    </div>
+    <div id="div2" class="d">
+        and how are you?
+    </div>
+    <span class="sp">
+        this is CSS.
+    </span>
+    <div>
+        <p>this is child selector example ,I am the
+            child of the div.</p>
+    </div>
+    <div>
+        I am a div.
+        <article>
+            <p>I am not the child of div
+                but i am grandchild of div or
+                child of article.</p>
+        </article>
+    </div>
+    <div>
+    <p data-x="a">hello</p>
+    </div>
+    <a href="https://www.google.com">Go to Google.</a>
+    <br>
+    <a href="https://www.facebook2.com">Go to Facebook.</a>
+</body>
+
+</html>

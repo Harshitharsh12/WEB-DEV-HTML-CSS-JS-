@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.boxes *{
+    border: 2px solid black;
+}
+/* .box:nth-child(even){
+    background-color: aqua;
+} */
+/* .box:nth-child(odd){
+    background-color: aqua;
+} */
+/* .box:nth-child(2){
+    background-color: red;
+} */
+.box:nth-last-child(1){
+    background-color:aquamarine;
+}
+/* .box:nth-last-of-type(2){
+background-color: peachpuff;
+} 
+  or   */
+.box:nth-last-of-type(even){
+background-color: peachpuff;
+}
+/* .box:nth-of-type(odd){
+    background-color: blueviolet;
+} */
+.box:nth-of-type(1){
+    background-color: blueviolet;
+}
+
+.boxes::before{
+    content: "Harshit kaira";
+    color: blue;
+}
+.boxes::after{
+    content: "Harshit kaira";
+    color:red;
+}
+/* .box::before{
+    content:"Lalit bisht";
+    color: brown;
+} */
+.box::after{
+    content:"Lalit bisht";
+    color: brown;
+}
+/* .box::selection{
+    color: aqua;
+    background-color: black;
+} */
+
+::selection{
+    color: aqua;
+    background-color: black;
+}
+/* .boxes::first-letter{
+    color: peru;
+} */
+.box::first-letter{
+    color: peru;
+    font-size: 30px;
+}
+input::placeholder{
+    color: blue;
+    font-size: 18px;
+
+}
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+    </div>
+    <input type="text" placeholder="type your name here">
+</input>
+</body>
+</html>

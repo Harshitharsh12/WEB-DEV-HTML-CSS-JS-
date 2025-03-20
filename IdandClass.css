@@ -1,0 +1,24 @@
+/* #firstdiv{
+    background-color:yellow;
+    color:red;
+}
+#seconddiv{
+    background-color:yellow;
+    color:red;
+}
+#span{
+    background-color:yellow;
+    color:red;
+}
+or
+
+.red{
+    background-color:yellow;
+    color:red;
+}
+or
+*/
+.bgyellow{
+    background-color:yellow;
+    color:red;
+}

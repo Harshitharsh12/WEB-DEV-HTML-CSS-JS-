@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Start should change the 
+        Background color every second</h1>
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+    <script>
+let a=document.querySelector("#start")
+let b=document.querySelector("#stop")
+function getcolor() 
+{let col1=0+Math.random()*255
+    let col2=0+Math.random()*255
+    let col3=0+Math.random()*255
+    return `rgb(${col1},${col2},${col3})`}
+a.addEventListener('click',()=>{
+stop=setInterval(()=>{
+document.body.style.backgroundColor=getcolor()
+},1000)
+})
+b.addEventListener('click',()=>{
+    clearInterval(stop)
+    })
+
+    </script>
+</body>
+</html>

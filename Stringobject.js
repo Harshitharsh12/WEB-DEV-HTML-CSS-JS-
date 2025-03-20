@@ -1,0 +1,11 @@
+// const str=new String()
+const str=new String("Harshit")
+console.log(str)
+console.log(str[0])
+console.log(str[3])
+console.log(str.length)
+console.log(str.toUpperCase())
+console.log(str.charAt(0))
+console.log(str.indexOf('r'))
+
+console.log(typeof str)

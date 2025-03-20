@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        li {
+            font-size: 70px;
+            /* list-style: devanagari; 
+*/
+            border: 5px solid black;
+            /*
+list-style-image: url(gif2.gif);
+or
+list-style-image: outside url(gif2.gif);
+note: the default list-style-position
+is always outside,we don't required
+specified it.
+list-style-position: inside; 
+list-style-image: url(gif2.gif); 
+or*/
+            list-style: inside url(gif2.gif);
+            /* list-style: inside disc ; */
+            /* list-style-type: circle; */
+        }
+        ol{border:2px solid salmon;
+            background-color:salmon;
+            list-style-type:lower-alpha;
+            padding:50px;
+            width:450px;
+        }
+        ol li{list-style:decimal;
+            border:2px solid lightsalmon;
+            font-size: 20px;
+            width:400px;
+            background:lightsalmon;  
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home:</li>
+            <li>About:</li>
+            <li>Contact:</li>
+        </ul>
+    </nav>
+    <ol>
+        <li> Tea</li>
+        <li>Cofee</li>
+        <li>Milk</li>
+        <li>Juice</li>
+        <li>Milkshake</li>
+    </ol>
+</body>
+
+</html>

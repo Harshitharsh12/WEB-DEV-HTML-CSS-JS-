@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+.box{
+    background-color:red
+}
+.box1{
+color:yellow;
+padding: 10px;
+border: 4px solid blue;
+margin: 30px;
+height: 200px;
+box-sizing:border-box;
+}
+.box2{
+color:white;
+padding: 10px;
+border: 4px solid black;
+margin: 25px;
+height: 200px;
+box-sizing:border-box;
+}
+/* Note:here the box1 class content's lower
+-margin and the box2 class content's upper
+-margin are collidswith each other and the 
+total margin is 30px,which is greater than 
+25px. this is called margin-collison. */
+*{
+     margin: 0;
+      padding: 0;
+
+}
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box1</div>
+    <div class="box box2">I am a box2</div>
+</body>
+</html>

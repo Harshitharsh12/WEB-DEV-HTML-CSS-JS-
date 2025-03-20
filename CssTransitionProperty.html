@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Property</title>
+    <style>
+        .container{
+background-color: aqua;
+width: 40vw;
+height: 50vh;
+padding: 40px;
+position: absolute;
+        }
+        .box{
+background-color:aliceblue;
+width: 14vw;
+height: 15vh;
+position:absolute;
+top: 2px;
+left:9px;
+/* transition-property:transform ; */
+/* transition-property:background-color; */
+/* transition-property: transform,background-color;  */
+/* transition-property:all;
+transition-duration:3s ;
+transition-timing-function:ease-in-out ;
+transition-delay: 1s; 
+or  */
+transition: all 3s ease-in-out 1s;
+/* transition: all 3s cubic-bezier(0, 0.2, 0, 1.17) 1s; */
+        }
+        .box:hover{
+            transform: translateX(18vw) translateY(15vh) scale(2);
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Hello I am a box
+        <div class="box">
+</div>
+    </div>
+</body>
+</html>

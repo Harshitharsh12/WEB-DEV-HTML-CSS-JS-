@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+Javascript events:
+        </title>
+    </head>
+    <body>
+   <div class="conatiner" id="main">
+   <div class="box1" id="1"></div>
+   <div class ="box2" id="2" ></div>
+   <div class ="box3" id="3"></div>
+   <div class ="box1" id="4" ></div>
+   </div>
+   <script>
+console.log(document.body.childNodes)
+console.log(document.body.childNodes[0])
+console.log(document.body.firstChild)
+console.log(document.body.lastChild)
+console.log(document.body.childNodes[1])
+console.log(document.body.children)
+console.log(document.body.children[0])
+console.log(document.body.firstElementChild)
+console.log(document.body.lastElementChild)
+document.body.firstElementChild.style.backgroundColor="red"
+document.body.firstElementChild.style.width="50px"
+document.body.firstElementChild.style.height="50px"
+console.log(document.getElementsByClassName("box1"))
+console.log(document.getElementsByClassName("box1")[0])
+console.log(document.getElementById("1"))
+console.log(document.getElementsByTagName("div"))
+console.log(document.getElementsByTagName("div")[1])
+console.log(document.querySelectorAll(".box1"))
+console.log(document.querySelector("#1"))
+   </script>
+    </body>
+</html>

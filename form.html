@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="post">
+      <label for="username">Name</label>
+      <input
+        type="textbox"
+        name="username"
+        placeholder="enter the name"
+        id="username"
+      />
+      <div>
+        <label for="gender"
+          >Gender:
+          <input type="radio" name="gender" id="male" />
+          <label for="male">male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">female</label>
+        </label>
+      </div>
+      <label for="address">Address</label>
+      <div>
+        <textarea name="address" id="address" cols="30" rows="5"></textarea>
+      </div>
+      <label for="qualification"
+        >Qualification:
+        <input type="checkbox" name="qualification" id="ug" />
+        <label for="ug">UG</label>
+        <input type="checkbox" name="qualification" id="pg" />
+        <label for="pg">PG</label>
+        <input type="checkbox" name="qualification" id="other" />
+        <label for="other">other</label>
+      </label>
+      <div>
+        <label for="dob"> date-of-birth: </label>
+        <input type="date" />
+      </div>
+      <label for="password:">password:</label>
+      <input type="password" placeholder="enter your password" />
+      <br />
+      <label for="color">enter your favouite color:</label>
+      <input type="color" id="color" />
+      <br />
+      <input type="reset" />
+      <br />
+      <label for="submit">click on submit button for submit:</label>
+      <input type="submit" id="submit" value="register" />
+      <br />
+      <label for="state">choose your state:</label>
+      <select name="state" id="state">
+        <option value="Delhi">Delhi></option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="haryana">haryana</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Madhya pradesh">Madhya pradesh</option>
+        <option value="Uttar pradesh">Uttar pradesh</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Chattisgarh">Chattisgarh</option>
+        <option value="Keral">Keral</option>
+        <option value="Tamilnadu">Tamilnadu</option>
+        <option value="Andhra pradesh">Andhra pradesh</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Goa">Goa</option>
+        <option value="Mumbai">Mumbai</option>
+      </select>
+      <fieldset>
+        <label for="">enter your age: </label>
+        <input type="date" />
+      </fieldset>
+    </form>
+  </body>
+</html>

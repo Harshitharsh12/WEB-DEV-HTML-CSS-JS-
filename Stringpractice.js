@@ -1,0 +1,12 @@
+let s = "Harshit";
+let s2 = "   h";
+console.log(`${s.substring(0, 3)}...`);
+console.log(`${s.slice(0, 3)}...`);
+console.log(s2.trim());
+console.log(s.toUpperCase());
+console.log(s.toLowerCase());
+console.log(s.length);
+console.log(s.indexOf("a"));
+console.log(s.charAt(2));
+console.log(s.endsWith(2));
+console.log(s.startsWith(2));

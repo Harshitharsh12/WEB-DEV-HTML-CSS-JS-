@@ -1,0 +1,36 @@
+<html>
+    <head>
+<title>
+    Javascript Form Validation
+</title>
+
+    </head>
+    <body>
+<form action="post" onsubmit="return func()">
+    <label for="name">Enter the username:</label>
+    <input type="text" id="name">
+    <b><span style="color:red"  id="message1"></span></b>
+    <br><br>
+    <label for="password">Enter the Password:</label>
+    <input type="password" id="password">
+    <b><span  style="color:red"  id="message2"></span></b>
+    <br></br>
+    <label for="submit">Click on submit button for submitting the data:</label>
+    <input type="submit" value="submit">
+</form>
+<script>
+    function func(){
+let a=document.getElementById("name").value
+let b=document.getElementById("password").value
+if(a==""){
+    document.getElementById("message1").innerHTML="** Please Enter The Username!!"
+return false
+}
+if(b.length<6){
+    document.getElementById("message2").innerHTML="** password should be 6 character long!!"
+return false   
+}
+    }
+</script>
+    </body>
+</html>

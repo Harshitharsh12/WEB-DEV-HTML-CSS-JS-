@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+        // setTimeout(() => {
+        //    alert("Harshit")
+        // }, 2000);
+        // // or
+        // setTimeout(function h(){
+        //     alert("kaira")
+        // }, 5000);
+        //or
+        // we can also give 
+        // the reference of variable in which
+        // we store the function:
+        // const a=function id(){
+        //     alert("the id is 30!!")
+        // }
+        // setTimeout(a,5000);
+        const change=setTimeout(()=>{
+document.querySelector('h1').innerHTML="Hi"
+        },5000)
+        // clearTimeout(change)
+        let bt=document.querySelector('#stop')
+        bt.addEventListener('click',()=>{
+            clearTimeout(change)})
+    const stopInterval=setInterval(()=>{
+        alert(` harshit`)
+},4000)
+//      or
+// we can also give the third parameter to the setInterval function.
+// setInterval((str)=>{
+    //         alert(`${str} harshit`)
+    // },4000,'hi')
+    clearInterval(stopInterval)
+
+    </script>
+</body>
+</html>

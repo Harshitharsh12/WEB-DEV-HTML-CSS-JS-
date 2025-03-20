@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+            <div  class="box1">
+                <!-- <button style="background-Color:red;border:2px solid black;width: 80px;height: 80px;" 
+                 class="bt" onclick="hello()"> -->
+                <button style="background-Color:red;border:2px solid black;width: 80px;height: 80px;
+                "  class="bt">
+                </button>
+            </div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+        <script>
+            let a=document.getElementsByTagName("button")[0]
+            let b=document.getElementsByClassName("container")[0]
+            function hello(){
+                alert("clicked")
+                console.log("button is clicked!!")
+            }
+            b.addEventListener("keydown",()=>{
+alert("go!!")
+            })
+            // a.addEventListener("click",(e)=>{
+            // a.addEventListener("dblclick",(e)=>{
+            // a.addEventListener("mouseover",(e)=>{
+            a.addEventListener("keydown",(e)=>{
+            // a.addEventListener("keyup",(e)=>{
+                alert(e.key)
+                console.log(e)
+                alert(e.keyCode)
+                alert("click ho gya!!")
+                e.stopPropagation()
+            })
+
+        </script>
+    </body>
+</html>

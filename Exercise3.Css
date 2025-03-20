@@ -1,0 +1,9 @@
+ div p{
+color:white;
+background-color:blue;
+width: 500px;
+} 
+div>p{
+color:red;
+background-color:yellow;
+}

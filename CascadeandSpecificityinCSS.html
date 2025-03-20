@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity:</title>
+    <style>
+        /* Note:firstly we check the specificity of 
+        the selectors and the maximum specificity
+        selector is applay on the code but when 
+        the specificity is equal of the selectors 
+        then the selector who is in last is apply. */
+
+        /* the specificity of element selector is 1*/
+        h1 {
+            color: red ;
+            background-color: purple;
+        }
+        /* here the specificity of combined/complex(h1 and yellow)
+        selector is 11(h1:1+.yellow:10) so it is apply */
+
+        h1.yellow{
+            color: maroon;
+            background-color: darkcyan;
+        }
+
+        /* the specificity of class selector is 10*/
+        .yellow {
+            color: yellow;
+            background-color: white;
+        }
+
+        /* the specificity of class selector is 10*/
+        .cred {
+            color: aqua;
+            background-color: blue;
+        }
+
+        /* the specificity of attribute selector is 10*/
+        [data-x=a] {
+            color: black;
+            background-color: brown;
+        }
+
+        /* the specificity of class selector is 10*/
+        .cpurple {
+            color: purple ;
+            background-color: yellow ;
+        }
+        /* the specificity of !important is 10000 
+        which is greater than all tags specificity*/
+        .cblue{
+            color:aquamarine !important;
+            background-color: blue !important;
+        }
+        /* Note: Inline CSS specificity is "1000" so when 
+        the inline CSS is applied on any tag then no 
+        any other internal and external CSS are works. */
+        /* psudo selectors specificity is 10*/
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple cblue " data-x="a"> CSS Specificity</h1>
+    </div> 
+</body>
+
+</html>

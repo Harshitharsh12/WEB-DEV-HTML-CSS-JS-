@@ -1,0 +1,27 @@
+function cardMaking(img,time_period,title,months
+,c_name,views){
+    document.body.style.backgroundColor="rgba(0, 0, 0, 0.900)"
+// document.querySelector(".container").style.border="2px solid red"
+document.querySelector(".container").style.height="100px"
+document.querySelector(".container").style.width="770px"
+document.querySelector(".container").style.margin="330px"
+document.querySelector(".container").style.backgroundColor="black"
+document.querySelector(".container").style.display="flex"
+document.body.children[0].childNodes[1].children[0].style.width="140px"
+document.body.children[0].childNodes[1].children[0].style.height="100px"
+document.body.children[0].childNodes[1].children[1].style.color="white"
+document.body.children[0].childNodes[1].children[1].style.backgroundColor="black"
+document.body.children[0].childNodes[1].children[1].style.borderRadius="6px"
+document.body.children[0].childNodes[1].children[1].style.borderColor="transparent"
+document.body.children[0].childNodes[1].children[1].children[0].style.margin="-2px"
+document.body.children[0].childNodes[1].children[1].style.position="fixed"
+document.body.children[0].childNodes[1].children[1].style.top="410px"
+document.body.children[0].childNodes[1].children[1].style.left="430px"
+document.body.children[0].childNodes[3].children[0].style.color="white"
+document.body.children[0].childNodes[3].style.paddingLeft="8px"
+document.body.children[0].childNodes[3].style.marginTop="-15px"
+document.body.children[0].childNodes[3].children[1].style.color="rgba(255, 255, 255, 0.515)"
+document.body.children[0].childNodes[3].children[1].style.fontSize="15px"
+document.body.children[0].childNodes[3].children[1].style.marginTop="-12px"
+}
+cardMaking();

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post" onsubmit="return func()">
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name">
+        <b><span id="Message" style="color:red"></span></b>
+        <br><br>
+        <label for="number">Enter Your Phone-Number:</label>
+        <input type="number" id="number">
+        <br></br>
+        <label for="submit">Click on submit button For Submit the data:</label>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        let a=document.getElementById("name").value
+        var correct_way = /^[A-Za-z]+$/;
+        function func(){
+                if(a.match(correct_way))
+                true;
+                else{
+                document.getElementById("Message").innerHTML="** please Enter The Valid Username in Characters";
+                return false;
+                }
+            }
+ 
+    </script>
+</body>
+</html>

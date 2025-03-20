@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Color Navigation Bar</title>
+    <style>
+        :root{
+            --ficolor1:black;
+            --seccolor1:white;
+            --thcolor1:aqua;
+            --fcolor1:black;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            padding: 10px;
+            margin: 20px;
+            background-color:var(--ficolor1);
+
+        }
+        nav ul li{
+        padding: 20px;
+        border: 4px solid var(--seccolor1);
+        }
+        nav ul li a{
+           text-decoration: none;
+           color:var(--seccolor1);
+          
+        }
+        nav ul li:hover{
+          
+            background-color:var(--thcolor1);
+        }
+        nav ul li a:hover{
+            color:var(--fcolor1);
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Content</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

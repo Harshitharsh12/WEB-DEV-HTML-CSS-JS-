@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="post" onsubmit=" return func()">
+      <label for="name">enter the next:</label>
+      <input type="text" id="name" />
+      <b><span id="ab"></span></b>
+      <br />
+      <input type="submit" />
+      <input type="email" />
+      <input type="number" />
+      <br />
+      <input type="button" />
+    </form>
+    <script>
+      function func() {
+        let a = document.getElementById("name").value;
+        if (a == "") {
+          document.getElementById("ab").innerHTML =
+            "** Please Enter the username";
+          return false;
+        }
+        if (a.length <= 3) {
+          document.getElementById("ab").innerHTML =
+            "** please Enter valid name";
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
